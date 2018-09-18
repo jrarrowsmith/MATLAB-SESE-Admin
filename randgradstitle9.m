@@ -1,6 +1,12 @@
 %script for random grads
+%JRA Sept 17, 2018
+%This feels like a hack but the cell arrays were difficult because 
+%I had trouble references ranges of cells and then getting decent formatting
 
-[num,txt] = xlsread('gradlisttitle9.xlsx');
+[num,txt] = xlsread('gradlisttitle9.xlsx'); 
+%expects the file to look like: 
+%column 1 | column 2
+%name | M or F
 women=[];
 men=[];
 for i=1:length(txt)
@@ -21,6 +27,7 @@ for i=1:length(randomwomen)
 end
 cell2table(selectedwomen)
 
+%select the men
 randommen = randperm(length(men),N);
 selectedmen=cell(N,1);
 for i=1:length(randommen)
