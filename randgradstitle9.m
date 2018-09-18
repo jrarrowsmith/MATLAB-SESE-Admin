@@ -1,7 +1,7 @@
 %script for random grads
 %JRA Sept 17, 2018
 %This feels like a hack but the cell arrays were difficult because 
-%I had trouble references ranges of cells and then getting decent formatting
+%I had trouble referencing ranges of cells and then getting decent formatting
 
 [num,txt] = xlsread('gradlisttitle9.xlsx'); 
 %expects the file to look like: 
